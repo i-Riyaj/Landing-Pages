@@ -1,0 +1,194 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+#main {
+	min-height: 100vh;
+	width: 100%;
+}
+
+#top {
+	min-height: 60vh;
+	width: 100%;
+	background-image: url("https://images.unsplash.com/photo-1750838021886-867de0d98f86?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-size: cover;
+	background-position: center;
+}
+
+#overlay {
+	width: 100%;
+	min-height: inherit;
+	background-color: rgba(0, 0, 0, 0.348);
+}
+#text {
+	position: absolute;
+	width: 100%;
+	top: 20%;
+	padding: 0 10vw;
+	color: white;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#text h1 {
+	font-size: 3vw;
+}
+
+#paragraphs {
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#paragraphs p {
+	font-size: 1vw;
+	width: 40%;
+}
+
+#icons {
+	display: flex;
+	gap: 0.5rem;
+}
+
+#bottom {
+	min-height: 40vh;
+	width: 100%;
+	background-color: aqua;
+	display: flex;
+}
+
+#bOne {
+	min-height: inherit;
+	width: 20%;
+	background-color: blue;
+}
+
+#bTwo {
+	min-height: inherit;
+	width: 30%;
+	background-image: url("https://images.unsplash.com/photo-1755148500048-d02a83ac433e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-size: cover;
+	background-position: center;
+}
+#bThree {
+	min-height: inherit;
+	width: 20%;
+}
+
+#part1 {
+	min-height: 5vh;
+	width: 100%;
+	font-size: 0.8vw;
+	background-color: orange;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5vw;
+	gap: 1vw;
+	color: white;
+}
+
+#part2 {
+	min-height: 35vh;
+	width: 100%;
+	background-image: url("https://images.unsplash.com/photo-1750688650392-42b653fb50d6?q=80&w=1106&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-size: cover;
+	background-position: center;
+}
+
+#bFour {
+	min-height: inherit;
+	width: 30%;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.806);
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+
+	padding: 3rem 0 0 2rem;
+}
+
+.bFourBottom {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.bFourBottom p {
+	font-size: 1vw;
+}
+
+.picture {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: red;
+}
+
+#bOne {
+	background-color: white;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 1.4rem;
+	padding-top: 2rem;
+	padding-left: 3rem;
+}
+
+@media (max-width: 500px) {
+	#text {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#paragraphs {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	#paragraphs p,
+	#paragraphs #icons {
+		margin-top: 20px;
+	}
+	#text h1 {
+		font-size: 10vw;
+	}
+	#paragraphs p {
+		font-size: 1vw;
+	}
+	#bottom {
+		flex-direction: column;
+	}
+	#bOne,
+	#bTwo,
+	#bThree,
+	#bFour {
+		width: 100%;
+	}
+	#part1 {
+		min-height: 20vh;
+	}
+	#part2 {
+		min-height: 80vh;
+	}
+	.bFourBottom p {
+		font-size: 2vw;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+	#bOne {
+		padding: 1rem 0 0 0.5rem;
+		font-size: 2vw;
+	}
+}
