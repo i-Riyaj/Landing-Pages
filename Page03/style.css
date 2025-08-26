@@ -22,10 +22,15 @@ body {
 #main img {
 	height: 500px;
 	z-index: 1;
-	animation: skew 5s infinite linear;
+	transition: all 2s linear;
 }
 
-@keyframes skew {
+#main img:hover {
+	transform: skew(10deg, 5deg);
+	cursor: pointer;
+}
+
+/* @keyframes skew {
 	0% {
 		transform: skewX(20deg);
 	}
@@ -38,7 +43,7 @@ body {
 	100% {
 		transform: scaleX(-20deg);
 	}
-}
+} */
 
 #scroll-div1 {
 	position: absolute;
